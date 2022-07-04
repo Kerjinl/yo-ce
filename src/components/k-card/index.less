@@ -1,0 +1,31 @@
+.k-card {
+  position: relative;
+  padding: 2rem;
+  white-space: nowrap;
+  border: 1px solid rgba(0, 0, 0, .06);
+  border-radius: 2px;
+  transition: box-shadow .3s, border-color .3s;
+
+  &:hover {
+    cursor: pointer;
+
+    .close-icon-btn {
+      display: block;
+    }
+  }
+
+  &.hover:hover {
+    border-color: transparent;
+    box-shadow: 0 1px 2px -2px #00000029, 0 3px 6px #0000001f, 0 5px 12px 4px #00000017;
+  }
+
+  .close-icon-btn {
+    display: none;
+    position: absolute;
+    right: 1rem;
+    top: 0.8rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: display .3s;
+  }
+}
